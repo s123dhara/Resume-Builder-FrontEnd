@@ -98,30 +98,36 @@
       <h1 class="text-3xl font-bold mb-6 text-center dark:text-light-gray">
         Certificate Generator
       </h1>
-      <form>
+      <form action="/" method="post" enctype="multipart/form-data">
         <div class="mb-4">
           <label
             class="block text-gray-700 dark:text-light-gray text-sm font-bold mb-2"
-            for="file1"
+            for="cert_image"
           >
             Upload Template
           </label>
           <input
             type="file"
-            id="file1"
+            id="cert_image"
+            name="cert_image"
+            accept=".png" 
+            required
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-light-gray leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <div class="mb-4">
           <label
             class="block text-gray-700 dark:text-light-gray text-sm font-bold mb-2"
-            for="file2"
+            for="names"
           >
             Upload CSV
           </label>
           <input
             type="file"
-            id="file2"
+            id="names"
+            name="names" 
+            accept=".csv" 
+            required
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-light-gray leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
